@@ -1,0 +1,45 @@
+                /* HEADER */
+.background{
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    line-height: 300px;
+    color: white;
+    text-shadow: 0 0 2px black;
+    font-size: 1.7em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+                /* FOOTER */
+footer{
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{ 
+    list-style: none; 
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+}
+
+footer li{
+    display: inline;
+}
+
+footer img{
+    width: 40px;
+    margin: 10px 4% 0 4%;
+}
+
+.facebook a img{
+    width: 55px;
+    margin-bottom: 5px;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
