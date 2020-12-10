@@ -81,7 +81,7 @@ else
             <label  for="Mot de passe">Confirmer le mot de passe</label>
             <input type="password" class="form-control" id="Mot de passe" name="confirm_password" required>
         </div>
-        <button type="submit" class="btn btn-primary d-block col-12 col-sm-9 col-md-6 col-lg-4 ml-auto mr-auto" name="envoyer">confirmer</button>
+        <button type="submit" class="btn btn-primary d-block col-10 col-sm-9 col-md-6 col-lg-4 ml-auto mr-auto" name="envoyer">confirmer</button>
         </form> 
     </section>         
 </main>

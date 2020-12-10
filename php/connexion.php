@@ -81,7 +81,7 @@ if (isset($_POST['login']) AND isset($_POST['password']))
             <label for="Mot de passe">Mot de passe</label>
             <input type="password" class="form-control" id="Mot de passe" name="password" required>
         </div>
-        <button type="submit" class="btn btn-primary d-block col-12 col-sm-9 col-md-6 col-lg-4 ml-auto mr-auto" name="envoyer">confirmer</button>
+        <button type="submit" class="btn btn-primary d-block col-10 col-sm-9 col-md-6 col-lg-4 ml-auto mr-auto" name="envoyer">confirmer</button>
         </form> 
     </section>         
 </main>
