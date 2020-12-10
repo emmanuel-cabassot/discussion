@@ -17,7 +17,7 @@ catch (Exception $e)
 /* Vérificatin que login et password ont été renseignés */
 if (isset($_POST['login']) AND isset($_POST['password'])) 
 {   
-    $login = htmlspecialchars($_POST['login']);
+    $login = htmlspecialchars($_POST['login'], ENT_QUOTES);
     /* recherche $login dans la base de donnée */    
     $req = $bdd->prepare('SELECT login, password, id FROM utilisateurs WHERE login = :login');
     $req->execute(array(

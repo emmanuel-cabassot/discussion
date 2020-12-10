@@ -25,7 +25,7 @@ $reponse = $bdd->query("SELECT utilisateurs.login, DATE_FORMAT(date, GET_FORMAT(
 if (isset($_POST['message'])) {
     $insert = $bdd->prepare('INSERT INTO `messages`(`message`, `id_utilisateur`, `date`) VALUES (:message, :id, NOW())');
     $insert->execute(array(
-    'message' => htmlspecialchars($_POST['message']),
+    'message' => htmlspecialchars($_POST['message'], ENT_QUOTES),
     'id' => $_SESSION['id']
     ));
     //Header pour pouvoir actualiser la page et faire apparaitre le message enregistré

@@ -24,7 +24,7 @@ else
     if(isset($_POST['envoyer']) ) 
     {
         // Réecriture des variables recupérées dans base de données
-        $loginn=htmlspecialchars($_POST['new_login']);
+        $loginn=htmlspecialchars($_POST['new_login'], ENT_QUOTES);
 
         // Sécurisation du mot de passe
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
