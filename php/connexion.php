@@ -36,7 +36,7 @@ if (isset($_POST['login']) AND isset($_POST['password']))
         if (password_verify($_POST['password'], $data['password'])) {
             $_SESSION['login'] = $login;
             $_SESSION['id'] =  $data['id'];
-            header('location:index.php'); 
+            header('location:../index.php'); 
         }
         //Sinon mot de passe incorrect
         else {
